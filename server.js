@@ -31,7 +31,7 @@ db.mongoose
 require('./app/routes/invoice.routes')(app);
 
 
-const PORT = process.env.NODE_DOCKER_PORT || 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server up and running on port ${PORT}`);
 });
